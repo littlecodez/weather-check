@@ -27,280 +27,293 @@
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="hero">
-        <nav>
-          <div class="contents">
-            <img src="/Weather/weather-app-main/images/logo.svg" alt="logo" />
-          </div>
-          <div class="contents">
-            <button>
+    <div>
+      <div class="container">
+        <div class="hero">
+          <nav>
+            <div class="contents">
               <img
-                src="/Weather/weather-app-main/images/icon-units.svg"
-                alt="units"
+                src="/Weather/weather-app-main/images/logo.svg"
+                alt="logo"
+                class="big"
               />
-              Units
-              <img
-                src="/Weather/weather-app-main/images/icon-dropdown.svg"
-                alt="icon-dropdown"
-              />
-            </button>
-          </div>
-        </nav>
-      </div>
-      <!--  -->
-      <div class="w-look">
-        <h2>How's is the sky looking today</h2>
-      </div>
-      <div class="search-area">
-        <div class="search-box">
-          <img src="" alt="" />
-          <input type="text" placeholder="Search for a place" />
+            </div>
+            <div class="contents">
+              <button>
+                <img
+                  src="/Weather/weather-app-main/images/icon-units.svg"
+                  alt="units"
+                />
+                Units
+                <img
+                  src="/Weather/weather-app-main/images/icon-dropdown.svg"
+                  alt="icon-dropdown"
+                />
+              </button>
+            </div>
+          </nav>
         </div>
+        <!--  -->
+        <div class="w-look">
+          <h2>How's is the sky looking today</h2>
+        </div>
+        <div class="search-area">
+          <div class="search-box">
+            <img
+              src="/Weather/weather-app-main/images/icon-search.svg"
+              alt=""
+            />
+            <input type="text" placeholder="Search for a place" />
+          </div>
 
-        <button>Search</button>
-      </div>
-      <!-- this a sub-container that has some other
+          <button>Search</button>
+        </div>
+        <!-- this a sub-container that has some other
        other divs -->
-      <div class="subcontainer">
-        <!-- the div, left-down contains other divs 
+        <div class="subcontainer">
+          <!-- the div, left-down contains other divs 
          (the berlin
          and the rest while the one bearing 
          right is for the hourly
          forecast. the remember to style that one bearing right
          to the left while stlying css) -->
 
-        <div class="left-down">
-          <div class="berlin">
-            <h3>Berlin, Germany</h3>
-            <p>Thursday, Nov 27, 2025</p>
-            <div class="sunny">
-              <div class="sunny-items">
-                <img
-                  src="/Weather/weather-app-main/images/icon-sunny.webp"
-                  alt="sunny"
-                />
-              </div>
-              <div class="sunny-items">
-                <h1>68<sup>o</sup></h1>
-              </div>
-            </div>
+          <div class="left-down">
+            <div class="berlin">
+              <div class="berlin-sub">
+                <div class="text">
+                  <h3>Berlin, Germany</h3>
+                  Thursday, Nov 27, 2025
+                </div>
+                <div class="sunny">
+                  <div class="sunny-items">
+                    <img
+                      src="/Weather/weather-app-main/images/icon-sunny.webp"
+                      alt="sunny"
+                    />
 
-            <!-- for the box before daily forcast -->
-            <div class="before-dfcast">
-              <div class="contents">
-                <h4>Feels Like</h4>
-                <h2>64<sup>o</sup></h2>
+                    <!-- <div class="sunny-items"> -->
+                    <h1>68<sup>o</sup></h1>
+                  </div>
+                </div>
               </div>
-              <div class="contents">
-                <h4>Humidity</h4>
-                <h2>26%</h2>
+
+              <!-- for the box before daily forcast -->
+              <div class="before-dfcast">
+                <div class="contents">
+                  <h4>Feels Like</h4>
+                  <h2>64<sup>o</sup></h2>
+                </div>
+                <div class="contents">
+                  <h4>Humidity</h4>
+                  <h2>26%</h2>
+                </div>
+                <div class="contents">
+                  <h4>Wind</h4>
+                  <h2>9 mph</h2>
+                </div>
+                <div class="contents">
+                  <h4>precipitation</h4>
+                  <h2>0 in</h2>
+                </div>
               </div>
-              <div class="contents">
-                <h4>Wind</h4>
-                <h2>9 mph</h2>
-              </div>
-              <div class="contents">
-                <h4>precipitation</h4>
-                <h2>0 in</h2>
+              <!-- for the daily forecast -->
+              <div class="d-text">Daily forecast</div>
+              <div class="daily-fcast">
+                <div class="itmes">
+                  <h4>Tue</h4>
+                  <img
+                    src="/Weather/weather-app-main/images/icon-rain.webp"
+                    alt="rain"
+                  />
+                  <div class="value">
+                    <h4>68<sup>o</sup></h4>
+                    <h4>57 <sup>o</sup></h4>
+                  </div>
+                </div>
+                <div class="itmes">
+                  <h4>Wed</h4>
+                  <img
+                    src="/Weather/weather-app-main/images/icon-drizzle.webp"
+                    alt="drizzle"
+                  />
+                  <div class="value">
+                    <h4>70<sup>o</sup></h4>
+                    <h4>59 <sup>o</sup></h4>
+                  </div>
+                </div>
+                <div class="itmes">
+                  <h4>Thur</h4>
+                  <img
+                    src="/Weather/weather-app-main/images/icon-sunny.webp"
+                    alt="sunny"
+                  />
+                  <div class="value">
+                    <h4>75<sup>o</sup></h4>
+                    <h4>57 <sup>o</sup></h4>
+                  </div>
+                </div>
+                <div class="itmes">
+                  <h4>Fri</h4>
+                  <img
+                    src="/Weather/weather-app-main/images/icon-partly-cloudy.webp"
+                    alt="icon-partly-cloudy"
+                  />
+                  <div class="value">
+                    <h4>77<sup>o</sup></h4>
+                    <h4>55 <sup>o</sup></h4>
+                  </div>
+                </div>
+                <div class="itmes">
+                  <h4>Sat</h4>
+                  <img
+                    src="/Weather/weather-app-main/images/icon-storm.webp"
+                    alt="storm"
+                  />
+                  <div class="value">
+                    <h4>70<sup>o</sup></h4>
+                    <h4>59<sup>o</sup></h4>
+                  </div>
+                </div>
+                <div class="itmes">
+                  <h4>Sun</h4>
+                  <img
+                    src="/Weather/weather-app-main/images/icon-snow.webp"
+                    alt="snow"
+                  />
+                  <div class="value">
+                    <h4>77<sup>o</sup></h4>
+                    <h4>61<sup>o</sup></h4>
+                  </div>
+                </div>
+                <div class="itmes">
+                  <h4>mon</h4>
+                  <img
+                    src="/Weather/weather-app-main/images/icon-fog.webp"
+                    alt="fog"
+                  />
+                  <div class="value">
+                    <h4>75<sup>o</sup></h4>
+                    <h4>59<sup>o</sup></h4>
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- for the daily forecast -->
-            <div class="daily-fcast">
-              <div class="itmes">
-                <h4>Tue</h4>
+          </div>
+          <!-- please come back here and to it all other
+          divs that it contains -->
+          <section class="rigth">
+            <div class="hour-title">
+              <h4>Hourly forecast</h4>
+              <button>
+                Tuesday
                 <img
-                  src="/Weather/weather-app-main/images/icon-rain.webp"
-                  alt="rain"
+                  src="/Weather/weather-app-main/images/icon-dropdown.svg"
+                  alt="icon-dropdown"
                 />
-                <div class="value">
-                  <h4>68<sup>o</sup></h4>
-                  <h4>57 <sup>o</sup></h4>
-                </div>
-              </div>
-              <div class="itmes">
-                <h4>Wed</h4>
+              </button>
+            </div>
+            <div class="hour"></div>
+            <div class="hour">
+              <div class="hour-cnts">
                 <img
-                  src="/Weather/weather-app-main/images/icon-drizzle.webp"
-                  alt="drizzle"
+                  src="/Weather/weather-app-main/images/icon-overcast.webp"
+                  alt="icon-overcast"
                 />
-                <div class="value">
-                  <h4>70<sup>o</sup></h4>
-                  <h4>59 <sup>o</sup></h4>
-                </div>
+                <h3>3 PM</h3>
               </div>
-              <div class="itmes">
-                <h4>Thur</h4>
-                <img
-                  src="/Weather/weather-app-main/images/icon-sunny.webp"
-                  alt="sunny"
-                />
-                <div class="value">
-                  <h4>75<sup>o</sup></h4>
-                  <h4>57 <sup>o</sup></h4>
-                </div>
+              <div class="hour-cnts">
+                <h2>68 <sup>o</sup></h2>
               </div>
-              <div class="itmes">
-                <h4>Fri</h4>
+            </div>
+            <div class="hour">
+              <div class="hour-cnts">
                 <img
                   src="/Weather/weather-app-main/images/icon-partly-cloudy.webp"
                   alt="icon-partly-cloudy"
                 />
-                <div class="value">
-                  <h4>77<sup>o</sup></h4>
-                  <h4>55 <sup>o</sup></h4>
-                </div>
+                <h3>4 PM</h3>
               </div>
-              <div class="itmes">
-                <h4>Sat</h4>
+              <div class="hour-cnts">
+                <h2>68 <sup>o</sup></h2>
+              </div>
+            </div>
+            <div class="hour">
+              <div class="hour-cnts">
                 <img
-                  src="/Weather/weather-app-main/images/icon-storm.webp"
-                  alt="storm"
+                  src="/Weather/weather-app-main/images/icon-sunny.webp"
+                  alt="sunny"
                 />
-                <div class="value">
-                  <h4>70<sup>o</sup></h4>
-                  <h4>59<sup>o</sup></h4>
-                </div>
+                <h3>5 PM</h3>
               </div>
-              <div class="itmes">
-                <h4>Sun</h4>
+              <div class="hour-cnts">
+                <h2>68 <sup>o</sup></h2>
+              </div>
+            </div>
+            <div class="hour">
+              <div class="hour-cnts">
+                <img
+                  src="/Weather/weather-app-main/images/icon-overcast.webp"
+                  alt="icon-overcast"
+                />
+                <h3>6 PM</h3>
+              </div>
+              <div class="hour-cnts">
+                <h2>66 <sup>o</sup></h2>
+              </div>
+            </div>
+            <div class="hour">
+              <div class="hour-cnts">
                 <img
                   src="/Weather/weather-app-main/images/icon-snow.webp"
                   alt="snow"
                 />
-                <div class="value">
-                  <h4>77<sup>o</sup></h4>
-                  <h4>61<sup>o</sup></h4>
-                </div>
+                <h3>7 PM</h3>
               </div>
-              <div class="itmes">
-                <h4>mon</h4>
+              <div class="hour-cnts">
+                <h2>68 <sup>o</sup></h2>
+              </div>
+            </div>
+            <div class="hour">
+              <div class="hour-cnts">
                 <img
                   src="/Weather/weather-app-main/images/icon-fog.webp"
                   alt="fog"
                 />
-                <div class="value">
-                  <h4>75<sup>o</sup></h4>
-                  <h4>59<sup>o</sup></h4>
-                </div>
+                <h3>8 PM</h3>
+              </div>
+              <div class="hour-cnts">
+                <h2>64 <sup>o</sup></h2>
               </div>
             </div>
-          </div>
+            <div class="hour">
+              <div class="hour-cnts">
+                <img
+                  src="/Weather/weather-app-main/images/icon-snow.webp"
+                  alt="snow"
+                />
+                <h3>9 PM</h3>
+              </div>
+              <div class="hour-cnts">
+                <h2>63 <sup>o</sup></h2>
+              </div>
+            </div>
+            <div class="hour">
+              <div class="hour-cnts">
+                <img
+                  src="/Weather/weather-app-main/images/icon-overcast.webp"
+                  alt="icon-overcast"
+                />
+                <h3>10 PM</h3>
+              </div>
+              <div class="hour-cnts">
+                <h2>63 <sup>o</sup></h2>
+              </div>
+            </div>
+          </section>
         </div>
-        <!-- please come back here and to it all other
-          divs that it contains -->
-        <section class="rigth">
-          <div class="hour-title">
-            <h4>Hourly forecast</h4>
-            <button>
-              Tuesday
-              <img
-                src="/Weather/weather-app-main/images/icon-dropdown.svg"
-                alt="icon-dropdown"
-              />
-            </button>
-          </div>
-          <div class="hour"></div>
-          <div class="hour">
-            <div class="hour-cnts">
-              <img
-                src="/Weather/weather-app-main/images/icon-overcast.webp"
-                alt="icon-overcast"
-              />
-              <h3>3 PM</h3>
-            </div>
-            <div class="hour-cnts">
-              <h2>68 <sup>o</sup></h2>
-            </div>
-          </div>
-          <div class="hour">
-            <div class="hour-cnts">
-              <img
-                src="/Weather/weather-app-main/images/icon-partly-cloudy.webp"
-                alt="icon-partly-cloudy"
-              />
-              <h3>4 PM</h3>
-            </div>
-            <div class="hour-cnts">
-              <h2>68 <sup>o</sup></h2>
-            </div>
-          </div>
-          <div class="hour">
-            <div class="hour-cnts">
-              <img
-                src="/Weather/weather-app-main/images/icon-sunny.webp"
-                alt="sunny"
-              />
-              <h3>5 PM</h3>
-            </div>
-            <div class="hour-cnts">
-              <h2>68 <sup>o</sup></h2>
-            </div>
-          </div>
-          <div class="hour">
-            <div class="hour-cnts">
-              <img
-                src="/Weather/weather-app-main/images/icon-overcast.webp"
-                alt="icon-overcast"
-              />
-              <h3>6 PM</h3>
-            </div>
-            <div class="hour-cnts">
-              <h2>66 <sup>o</sup></h2>
-            </div>
-          </div>
-          <div class="hour">
-            <div class="hour-cnts">
-              <img
-                src="/Weather/weather-app-main/images/icon-snow.webp"
-                alt="snow"
-              />
-              <h3>7 PM</h3>
-            </div>
-            <div class="hour-cnts">
-              <h2>68 <sup>o</sup></h2>
-            </div>
-          </div>
-          <div class="hour">
-            <div class="hour-cnts">
-              <img
-                src="/Weather/weather-app-main/images/icon-fog.webp"
-                alt="fog"
-              />
-              <h3>8 PM</h3>
-            </div>
-            <div class="hour-cnts">
-              <h2>64 <sup>o</sup></h2>
-            </div>
-          </div>
-          <div class="hour">
-            <div class="hour-cnts">
-              <img
-                src="/Weather/weather-app-main/images/icon-snow.webp"
-                alt="snow"
-              />
-              <h3>9 PM</h3>
-            </div>
-            <div class="hour-cnts">
-              <h2>63 <sup>o</sup></h2>
-            </div>
-          </div>
-          <div class="hour">
-            <div class="hour-cnts">
-              <img
-                src="/Weather/weather-app-main/images/icon-overcast.webp"
-                alt="icon-overcast"
-              />
-              <h3>10 PM</h3>
-            </div>
-            <div class="hour-cnts">
-              <h2>63 <sup>o</sup></h2>
-            </div>
-          </div>
-        </section>
       </div>
-    </div>
-    <!-- Units Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F)
+      <!-- Units Switch to Imperial/Metric Temperature Celsius (°C) Fahrenheit (°F)
     Wind Speed km/h mph Precipitation Millimeters (mm) Inches (in) How's the sky
     looking today? Search for a city, e.g., New York Search Feels like Insert
     temperature here Humidity Insert humidity here Wind Insert wind here
@@ -308,10 +321,11 @@
     for the next 7 days here Hourly forecast -- Insert hourly forecast for the
     selected day here -->
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
     </div>
   </body>
 </html>
