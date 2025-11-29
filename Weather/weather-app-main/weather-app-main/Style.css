@@ -7,48 +7,39 @@ body {
   align-items: center;
   justify-content: center;
   background-color: grey;
-  min-height: 100vh;
+  min-width: 100vh;
 }
 .container {
   background-color: hsl(240, 68%, 16%);
   flex-direction: column;
   display: flex;
-  min-height: 100vh;
   color: white;
-  /* align-items: center; */
-  /* justify-content: space-between; */
   margin: 32px;
+  padding: 8px;
+  min-width: 100vh;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid yellow;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.hero nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid yellow;
-  /* gap: 100px; */
-  /* width: 100%; */
-  margin-top: 32px;
-}
-
-.contents button {
+nav button {
   background-color: rgb(44, 62, 85);
   border: 0;
   border-radius: 5px;
   width: 80px;
   color: white;
 }
-.contents .big {
-  height: 20px;
+nav .big {
+  height: 15px;
 }
-.w-look {
-  text-align: center;
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  /* border: 2px solid red; */
 }
 .search-area {
   display: flex;
@@ -91,13 +82,14 @@ input::placeholder {
 .subcontainer {
   display: flex;
   flex-direction: row;
-  display: flex;
   min-height: 100vh;
+  border: 2px solid red;
+  margin: 12px;
+}
+.left-down {
+  display: flex;
 }
 
-.berlin {
-  margin: 15px;
-}
 .berlin-sub {
   display: flex;
   flex-direction: row;
@@ -105,18 +97,15 @@ input::placeholder {
   justify-content: space-between;
   font-size: 10px;
   background: url(/Weather/weather-app-main/images/bg-today-large.svg);
-  background-position: 100%;
+  background-position: 50%;
   background-repeat: no-repeat;
-
-  width: 390px;
-  height: 150px;
+  margin: 8px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 32px;
 }
 
 .berlin-sub .sunny-items {
   display: flex;
-  /* background-color: red; */
   flex-direction: row;
 }
 .sunny-items img {
@@ -130,25 +119,20 @@ input::placeholder {
 .before-dfcast .contents {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgba(41, 36, 82, 0.842);
   margin: 8px;
-  padding: px;
   height: 50px;
   width: 75px;
+  padding: 10px;
   font-size: 8px;
   border-radius: 5px;
-  text-align: center;
   font-weight: 10px;
 }
 .daily-fcast {
   display: flex;
   flex-direction: row;
-
-  /* border: 2px solid yellow; */
   margin: 10px;
-  /* width: 300px; */
 }
 .d-text {
   display: flex;
@@ -159,8 +143,12 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   background-color: rgba(41, 36, 82, 0.842);
-  border: 2px solid yellow;
-  margin: 6px;
+  /* border: 2px solid yellow; */
+  margin: 3px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 8px;
   align-items: center;
   justify-content: space-between;
 }
@@ -168,6 +156,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
 }
 .daily-fcast .itmes img {
   height: 40px;
@@ -176,4 +165,48 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   background-color: rgba(41, 36, 82, 0.842);
+  height: fit-content;
+  border-radius: 5px;
+  margin: 8px;
+  /* padding: 8px; */
+}
+.hour-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  /* background-color: white; */
+}
+.hour-title button {
+  color: white;
+  display: flex;
+  background-color: rgba(88, 88, 110, 0.842);
+  border: 0;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 10px;
+  gap: 2px;
+}
+.hour-title button img {
+  height: 5px;
+  margin-top: 5px;
+}
+.hour {
+  display: flex;
+  background-color: rgba(88, 88, 110, 0.842);
+  margin: 4px 6px;
+  border-radius: 5px;
+  justify-content: space-between;
+  /* padding: 2px 6px; */
+  border: 2px solid green;
+}
+.hour-cnts {
+  display: flex;
+  font-size: 6px;
+  gap: 2px;
+  align-items: center;
+}
+.hour-cnts img {
+  height: 30px;
 }
