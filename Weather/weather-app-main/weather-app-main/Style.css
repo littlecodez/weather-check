@@ -6,7 +6,7 @@
 body {
   align-items: center;
   justify-content: center;
-  background-color: grey;
+  background-color: white;
   min-width: 100vh;
 }
 .container {
@@ -14,33 +14,36 @@ body {
   flex-direction: column;
   display: flex;
   color: white;
-  margin: 32px;
+  margin: 12px;
   padding: 8px;
-  min-width: 100vh;
   align-items: center;
   justify-content: center;
-  border: 3px solid yellow;
-}
-
-nav button {
-  background-color: rgb(44, 62, 85);
-  border: 0;
-  border-radius: 5px;
-  width: 80px;
-  color: white;
-}
-nav .big {
-  height: 15px;
 }
 nav {
   display: flex;
-  flex-direction: row;
-  margin: 10px;
+  align-items: center;
+  justify-content: space-be;
+}
+nav button {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  /* border: 2px solid red; */
+  text-align: justify;
+  color: white;
+  font-size: 10px;
+  background-color: rgb(44, 62, 85);
+  border: 0;
+  padding: 4px;
+  gap: 3px;
+  border-radius: 5px;
 }
+nav .big {
+  height: 14px;
+}
+.drp-down {
+  height: 5px;
+}
+
 .search-area {
   display: flex;
   flex-direction: row;
@@ -83,8 +86,8 @@ input::placeholder {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-  border: 2px solid red;
-  margin: 12px;
+  /* border: 2px solid red; */
+  margin: 8px;
 }
 .left-down {
   display: flex;
@@ -168,15 +171,15 @@ input::placeholder {
   height: fit-content;
   border-radius: 5px;
   margin: 8px;
-  /* padding: 8px; */
+  padding: 8px;
 }
+
 .hour-title {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-  /* background-color: white; */
+  margin: 4px;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 2px;
 }
 .hour-title button {
   color: white;
@@ -187,6 +190,8 @@ input::placeholder {
   padding: 2px;
   font-size: 10px;
   gap: 2px;
+  margin-left: 4px;
+  text-align: center;
 }
 .hour-title button img {
   height: 5px;
@@ -198,8 +203,7 @@ input::placeholder {
   margin: 4px 6px;
   border-radius: 5px;
   justify-content: space-between;
-  /* padding: 2px 6px; */
-  border: 2px solid green;
+  padding: 2px 6px;
 }
 .hour-cnts {
   display: flex;
@@ -208,5 +212,5 @@ input::placeholder {
   align-items: center;
 }
 .hour-cnts img {
-  height: 30px;
+  height: 23px;
 }
